@@ -51,17 +51,30 @@
                     <th><input type="tel" name="tel" id="tel"
                         pattern="[0-9]{10}" placeholder="0584456912" aria-label="10-digit prefix" size="20"><br></th>
                 </tr>
+                <tr>
+                    <th><label for="eff">how much efficient are you: </label></th>
+                    <th><input type="range" name="eff" id="eff" min="0" max="100" step="5" value="50">
+                        <output class="price-output" for="eff"></output></th>
+                </tr>
+                <tr>
+                    <th>            
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date"></th>
+                    <th>
+                        <select name="country" id="">
+                            <option value="Asia">Asia</option>
+                            <option value="Africa">Africa</option>
+                            <option value="America">America</option>
+                            <option value="eroup">Eroup</option>
+                            <option value="australia">australia</option>
+                            <option value="latin">Latin America</option>
+                        </select><br>
+                    </th>
+                </tr>
+                
             </table>
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date">
-            <select name="country" id="">
-                <option value="Asia">Asia</option>
-                <option value="Africa">Africa</option>
-                <option value="America">America</option>
-                <option value="eroup">Eroup</option>
-                <option value="australia">australia</option>
-                <option value="latin">Latin America</option>
-            </select><br>
+
+
             <label for="detail">what do you say</label><br>
             <textarea name="detail" id="detail" cols="30" rows="10"></textarea>
             <br>
